@@ -46,11 +46,13 @@ export default {
       this.tree = tree
     },
     parseTree (node) {
+      node = Object.assign({}, node)
       console.log('parseTree', node)
-      const branches = this.$store.getters.answersForQuestion(node.id)
+      const branches = Array.prototype.slice.call(this.$store.getters.answersForQuestion(node.id))
       node.children = branches
       node.children.forEach((branch) => {
-        const nextNode = this.$store.getters.questionById(branch.nextQuestion)
+        branch = Object.assign({}, branch)
+        const nextNode = Object.assign({}, this.$store.getters.questionById(branch.nextQuestion))
         console.log('nextNode', nextNode)
         if (nextNode !== undefined) {
           branch.children = [nextNode]
