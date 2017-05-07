@@ -264,10 +264,6 @@ aws4@^1.2.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
-"ax2-eventtracker@git+https://27b74f386a8e5c94458baa95aecbdbf26c8fad68:x-oauth-basic@github.com/ax2inc/components-event-tracker.git":
-  version "1.0.0"
-  resolved "git+https://27b74f386a8e5c94458baa95aecbdbf26c8fad68:x-oauth-basic@github.com/ax2inc/components-event-tracker.git#4c4045fdb79d03471effa7032ca44465beef9a86"
-
 babel-code-frame@^6.11.0, babel-code-frame@^6.16.0, babel-code-frame@^6.22.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.22.0.tgz#027620bee567a88c32561574e7fd0801d33118e4"
@@ -4482,6 +4478,10 @@ parseurl@~1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.1.tgz#c8ab8c9223ba34888aa64a297b28853bec18da56"
 
+particles.js@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/particles.js/-/particles.js-2.0.0.tgz#21386c4328d6c7f96780a201e96eedfc09c736f6"
+
 path-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/path-browserify/-/path-browserify-0.0.0.tgz#a0b870729aae214005b7d5032ec2cbbb0fb4451a"
@@ -6073,6 +6073,13 @@ vue-loader@^11.3.4:
     vue-hot-reload-api "^2.0.11"
     vue-style-loader "^2.0.0"
     vue-template-es2015-compiler "^1.2.2"
+
+vue-particles@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/vue-particles/-/vue-particles-1.0.4.tgz#e27db557e4731aa9013bbe59398a71b45ebb78fb"
+  dependencies:
+    particles.js "^2.0.0"
+    vue "^2.2.6"
 
 vue-resize-directive@^1.0.0:
   version "1.0.0"

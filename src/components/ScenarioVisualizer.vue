@@ -72,7 +72,7 @@ export default {
 .tree-wrapper {
   width: 3000px;
   position: fixed;
-  background: white;
+  background: transparent;
   top: 40px;
   right: 0;
   bottom: 0;
