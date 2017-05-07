@@ -5,7 +5,6 @@ import { sync } from 'vuex-router-sync'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import locale from 'element-ui/lib/locale/lang/en'
-import VueParticles from 'vue-particles'
 
 import router from '@/router'
 import store from '@/store'
@@ -16,9 +15,6 @@ Vue.config.productionTip = false
 
 // Init Element
 Vue.use(ElementUI, { locale })
-
-// Init particles
-Vue.use(VueParticles)
 
 // Sync vuex and vue-router
 sync(store, router)
