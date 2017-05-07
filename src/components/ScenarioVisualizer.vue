@@ -23,18 +23,7 @@ export default {
     D3tree
   },
   data: () => ({
-    tree: {
-      text: 'father',
-      children: [{
-        text: 'son1',
-        children: [
-          {text: 'grandson'}, {text: 'grandson2'}
-        ]
-      }, {
-        text: 'son2',
-        children: [{text: 'grandson3'}, {text: 'grandson4'}]
-      }]
-    }
+    tree: {}
   }),
   computed: {
     ...mapGetters({
@@ -69,15 +58,6 @@ export default {
         }
       })
       return node
-    },
-    getNextNode (branch) {
-      console.log('getNextNode', branch)
-      if (branch === undefined) {
-        return
-      }
-      // const step = this.$store.getters.questionById(branch.nextQuestion)
-      // branch.children = [step]
-      return this.$store.getters.questionById(branch.nextQuestion)
     },
     getId (node) {
       return node.text
